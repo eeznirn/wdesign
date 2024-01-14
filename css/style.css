@@ -1,0 +1,209 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap");
+
+/*공통 부분*/
+
+html {
+  font-size: 100%;
+  font-family: "Gothic A1", sans-serif;
+}
+
+body {
+  font-family: "Gothic A1", sans-serif;
+  line-height: 1.7;
+  color: rgb(0, 0, 0);
+  background-color: #ffea00;
+}
+
+img {
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4%;
+}
+
+/* 버튼 */
+.button {
+  font-size: 15px;
+  background: rgb(1, 99, 255);
+  color: white;
+  border-radius: 15px;
+  padding: 18px 32px;
+}
+.button:hover {
+  background: #34b54c;
+}
+
+/* iframe */
+iframe {
+  width: 100%;
+}
+
+/*드롭다운 메뉴*/
+ul li {
+  list-style: none;
+}
+/* a태그 텍스트 밑줄 없앰 */
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#menu {
+  font: bold 20px;
+  width: 700px;
+  height: 50px;
+  background: rgb(1, 99, 255);
+  color: black;
+  line-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#menu > ul > li > ul {
+  width: 130px;
+  display: none;
+  position: absolute;
+  font-size: 15px;
+  background: rgb(255, 217, 0);
+}
+
+#menu > ul > li:hover > ul {
+  display: block;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(1, 99, 255);
+}
+
+.logo {
+  width: 100px;
+  margin-top: 14px;
+}
+
+.main-nav {
+  display: flex;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  list-style: none;
+}
+.main-nav li {
+  margin-left: 10px;
+}
+.main-nav a {
+  color: rgb(255, 255, 255);
+}
+.main-nav a:hover {
+  color: rgb(255, 217, 1);
+}
+
+.menu-content {
+  max-width: 560px;
+  margin-top: 10%;
+}
+.menu-content .page-title {
+  text-align: center;
+}
+.menu-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 0;
+}
+
+/*전시 그리드*/
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+/* index.html
+------------------------------- */
+
+#home .page-title {
+  text-transform: none;
+}
+.home-content {
+  text-align: center;
+  margin-top: 10%;
+}
+.home-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
+}
+
+/* book.html
+------------------------------- */
+
+div {
+  color: black;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+/*예약 폼 입력  */
+form div {
+  margin-bottom: 14px;
+  color: rgb(1, 99, 255);
+}
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="date"],
+input[type="text"],
+input[type="tel"],
+textarea {
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px #fff solid;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+input[type="date"],
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  max-width: 220px;
+}
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/*  지도 */
+#location {
+  padding: 4% 0;
+}
+
+.location-map {
+  width: 100%;
+}
+
+/* 하단  */
+footer {
+  background: rgb(1, 99, 255);
+  text-align: center;
+  padding: 26px 0;
+}
+footer p {
+  color: #fff;
+  font-size: 13px;
+}
